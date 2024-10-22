@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="API_Star_Wars.css" />
+    <title>API Star Wars</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Поиск данных Swapi Star Wars</h1>
+      <div class="search">
+        <div class="select-container">
+          <select id="entitySelect">
+            <option value="people">Персонажи</option>
+            <option value="planets">Планеты</option>
+            <option value="films">Фильмы</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <input
+            type="number"
+            id="idInput"
+            min="1"
+            max="10"
+            placeholder="Введите ID (1-10)"
+          />
+        </div>
+        <button id="searchButton">Поиск</button>
+      </div>
+      <div id="result" class="result"></div>
+      <div id="errorMessage" class="result"></div>
+    </div>
+    <script src="API_Star_Wars.js"></script>
+  </body>
+</html>
